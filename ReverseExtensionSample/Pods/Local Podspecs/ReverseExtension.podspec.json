@@ -16,7 +16,7 @@
   },
   "social_media_url": "https://twitter.com/marty_suzuki",
   "platforms": {
-    "ios": "8.0"
+    "ios": "12.0"
   },
   "source_files": "ReverseExtension/*.{swift,h,m}"
 }
