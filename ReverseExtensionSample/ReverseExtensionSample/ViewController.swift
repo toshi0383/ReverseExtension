@@ -19,7 +19,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableView.re.dataSource = self
-        
+        tableView.re.delegate = self
+
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         
         tableView.re.delegate = self

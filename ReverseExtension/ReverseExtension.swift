@@ -77,16 +77,9 @@ extension UITableView {
         }
         
         //MARK: Delegate
-        private var delegateTransporter: UITableViewDelegateTransporter? {
-            didSet { base?.delegate = delegateTransporter }
-        }
         public weak var delegate: UITableViewDelegate? {
             didSet {
-                guard let delegate = delegate else {
-                    delegateTransporter = nil
-                    return
-                }
-                delegateTransporter = UITableViewDelegateTransporter(delegates: [delegate, self])
+                base?.delegate = self
             }
         }
         public weak var dataSource: UITableViewDataSource? {
@@ -376,6 +369,8 @@ extension UITableView.ReverseExtension: UITableViewDelegate {
             cell.contentView.transform = CGAffineTransform.identity.rotated(by: .pi)
             UIView.setAnimationsEnabled(true)
         }
+
+        delegate?.tableView?(tableView, willDisplay: cell, forRowAt: reversedIndexPath(with: indexPath))
     }
     
     public func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
@@ -384,6 +379,8 @@ extension UITableView.ReverseExtension: UITableViewDelegate {
             view.transform = CGAffineTransform.identity.rotated(by: .pi)
             UIView.setAnimationsEnabled(true)
         }
+
+        delegate?.tableView?(tableView, willDisplayHeaderView: view, forSection: reversedSection(with: section))
     }
     
     public func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
@@ -392,6 +389,16 @@ extension UITableView.ReverseExtension: UITableViewDelegate {
             view.transform = CGAffineTransform.identity.rotated(by: .pi)
             UIView.setAnimationsEnabled(true)
         }
+
+        delegate?.tableView?(tableView, willDisplayFooterView: view, forSection: reversedSection(with: section))
+    }
+
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        delegate?.tableView?(tableView, heightForHeaderInSection: reversedSection(with: section)) ?? .leastNonzeroMagnitude
+    }
+
+    public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        delegate?.tableView?(tableView, heightForFooterInSection: reversedSection(with: section)) ?? .leastNonzeroMagnitude
     }
 }
 
@@ -427,6 +434,10 @@ extension UITableView.ReverseExtension: UITableViewDataSource {
 
     public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return delegate?.tableView?(tableView, viewForFooterInSection: reversedSection(with: section))
+    }
+
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.tableView?(tableView, didSelectRowAt: reversedIndexPath(with: indexPath))
     }
 
     // Editing

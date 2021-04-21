@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		299ACF5AC5F477637D95205E548C25EE /* DelegateTransporter.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFAF7E5C9DC858BED9F45C299C16E07 /* DelegateTransporter.m */; };
 		2C4AE75E61A0D850D7B67FD8154B646E /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14EA14DD00554C7CF7000BAD848C01F /* TouchView.swift */; };
 		4354B2D48C7C0D87F4CF520518E5B8C9 /* ReverseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BC939067979DD037D3E00A6192576 /* ReverseExtension.swift */; };
 		4F69534F8D673DB46E0B387F07B0A671 /* ReverseExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 666461603AD7D8647D1AA18792841171 /* ReverseExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54BF89D1BE6BC44CAD808E2588BAA69E /* ReverseExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA9A1BFF40DA336E61C4243242F1222 /* ReverseExtension-dummy.m */; };
-		59FF84DA3C57E5B0EEF598CA601086DA /* UITableViewDelegateTransporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B71E438F808A8ADD8CC74E25EC24B75 /* UITableViewDelegateTransporter.swift */; };
 		5F2B5FED99F618DE98CC78D3E8C4725D /* UIWindow+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6052E97D806F3EF6D3698AD3AF0D9D /* UIWindow+Swizzle.swift */; };
 		A2150CE6EDA4BA5FABD4D1B8B1CA2CC9 /* TouchVisualizer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FA540BB70F9B5D11F2A5BC8619548D /* TouchVisualizer-dummy.m */; };
 		DF744588E5C6E4C202CA19C6800AE8AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -23,7 +21,6 @@
 		E7D35E7BA3A5965F2831537FA7B45050 /* TouchVisualizer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85024DA1A119DE59A341794EE17B6A4A /* TouchVisualizer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6EFE7C599E1EDC7BD8864FED7FCB6E4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB96B2BF83287FAC3F53A78211DE2570 /* Configuration.swift */; };
 		FEB37233939C2991C934E8E26FA3C158 /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519B7EAB4E01BCF24473CCA583F4BF44 /* Visualizer.swift */; };
-		FF13556467A3AA167C23FFA941B712F6 /* DelegateTransporter.h in Headers */ = {isa = PBXBuildFile; fileRef = B3DBD70257B9F4201070B976372135ED /* DelegateTransporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,36 +42,33 @@
 
 /* Begin PBXFileReference section */
 		094B663FBE595D618B5C782AEBAC6445 /* Pods-ReverseExtensionSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReverseExtensionSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		28E34865DA36604F45880390B1423BB0 /* ReverseExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ReverseExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		28E34865DA36604F45880390B1423BB0 /* ReverseExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ReverseExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		34EAC6EFA69930151AD73917FE899114 /* ReverseExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReverseExtension.debug.xcconfig; sourceTree = "<group>"; };
 		447C52B3A6E1491A9D9FC14418556B4C /* Pods-ReverseExtensionSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReverseExtensionSample-frameworks.sh"; sourceTree = "<group>"; };
-		44F44AA2ED67502BA6D251667073CDFF /* Pods_ReverseExtensionSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReverseExtensionSample.framework; path = "Pods-ReverseExtensionSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F44AA2ED67502BA6D251667073CDFF /* Pods_ReverseExtensionSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReverseExtensionSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E81D915E1ED4F4F6A7300FB0B4236B /* TouchVisualizer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TouchVisualizer-prefix.pch"; sourceTree = "<group>"; };
 		519B7EAB4E01BCF24473CCA583F4BF44 /* Visualizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Visualizer.swift; path = TouchVisualizer/Visualizer.swift; sourceTree = "<group>"; };
 		539583DEC608817F305A82FDBC64640F /* Pods-ReverseExtensionSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReverseExtensionSample-dummy.m"; sourceTree = "<group>"; };
 		59233BB284FD0329FF4CF45AE5A245BA /* ReverseExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReverseExtension.modulemap; sourceTree = "<group>"; };
 		5C6E9349566414548656A23D2C4BBFA4 /* TouchVisualizer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TouchVisualizer-Info.plist"; sourceTree = "<group>"; };
-		65701223E47D1106EED1E4517578C59D /* ReverseExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReverseExtension.framework; path = ReverseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65701223E47D1106EED1E4517578C59D /* ReverseExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReverseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		666461603AD7D8647D1AA18792841171 /* ReverseExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReverseExtension-umbrella.h"; sourceTree = "<group>"; };
-		672CADDE8002F8697709ECD98ED04F55 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		672CADDE8002F8697709ECD98ED04F55 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		68AFE264100F836B42CA89A72153BD44 /* TouchVisualizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TouchVisualizer.debug.xcconfig; sourceTree = "<group>"; };
-		6B71E438F808A8ADD8CC74E25EC24B75 /* UITableViewDelegateTransporter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewDelegateTransporter.swift; path = ReverseExtension/UITableViewDelegateTransporter.swift; sourceTree = "<group>"; };
 		6F9C0495C1E5B76ACA6B6CB37E8EE0D8 /* Pods-ReverseExtensionSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReverseExtensionSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		821F384F5017E9F21851623D7DE42E8C /* Pods-ReverseExtensionSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReverseExtensionSample-umbrella.h"; sourceTree = "<group>"; };
 		85024DA1A119DE59A341794EE17B6A4A /* TouchVisualizer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TouchVisualizer-umbrella.h"; sourceTree = "<group>"; };
-		8A37E2587439714D0F4B246C441B660E /* TouchVisualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TouchVisualizer.framework; path = TouchVisualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E4F2C6FB43833C57158930B8BBE3499 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8A37E2587439714D0F4B246C441B660E /* TouchVisualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchVisualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4F2C6FB43833C57158930B8BBE3499 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		922BC939067979DD037D3E00A6192576 /* ReverseExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReverseExtension.swift; path = ReverseExtension/ReverseExtension.swift; sourceTree = "<group>"; };
 		95FA540BB70F9B5D11F2A5BC8619548D /* TouchVisualizer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TouchVisualizer-dummy.m"; sourceTree = "<group>"; };
 		98295F7099A3CB1FAD76A1CAA20F0D2B /* Pods-ReverseExtensionSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReverseExtensionSample.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E6052E97D806F3EF6D3698AD3AF0D9D /* UIWindow+Swizzle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWindow+Swizzle.swift"; path = "TouchVisualizer/UIWindow+Swizzle.swift"; sourceTree = "<group>"; };
 		A14EA14DD00554C7CF7000BAD848C01F /* TouchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchView.swift; path = TouchVisualizer/TouchView.swift; sourceTree = "<group>"; };
 		A44EB2604D7CC4EC191F9B0D7F6A8A4A /* Pods-ReverseExtensionSample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReverseExtensionSample-Info.plist"; sourceTree = "<group>"; };
-		AFFAF7E5C9DC858BED9F45C299C16E07 /* DelegateTransporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DelegateTransporter.m; path = ReverseExtension/DelegateTransporter.m; sourceTree = "<group>"; };
 		B16804D96F17CC5D527F30AC12441A6D /* TouchVisualizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TouchVisualizer.release.xcconfig; sourceTree = "<group>"; };
-		B3DBD70257B9F4201070B976372135ED /* DelegateTransporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DelegateTransporter.h; path = ReverseExtension/DelegateTransporter.h; sourceTree = "<group>"; };
 		B4B2D6E9B04B3524CA2A77F608F38690 /* Pods-ReverseExtensionSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReverseExtensionSample.debug.xcconfig"; sourceTree = "<group>"; };
 		CE3BD7D95F31C6BF58D9A1F46D938A4A /* ReverseExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReverseExtension-Info.plist"; sourceTree = "<group>"; };
 		D7011F69B789AEEB38925DA75C5DC491 /* TouchVisualizer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TouchVisualizer.modulemap; sourceTree = "<group>"; };
@@ -158,17 +152,13 @@
 				519B7EAB4E01BCF24473CCA583F4BF44 /* Visualizer.swift */,
 				DFB0CE55F4773F877193FEFDC772A171 /* Support Files */,
 			);
-			name = TouchVisualizer;
 			path = TouchVisualizer;
 			sourceTree = "<group>";
 		};
 		93166AE6B86E3BF744EC587B0FA12632 /* ReverseExtension */ = {
 			isa = PBXGroup;
 			children = (
-				B3DBD70257B9F4201070B976372135ED /* DelegateTransporter.h */,
-				AFFAF7E5C9DC858BED9F45C299C16E07 /* DelegateTransporter.m */,
 				922BC939067979DD037D3E00A6192576 /* ReverseExtension.swift */,
-				6B71E438F808A8ADD8CC74E25EC24B75 /* UITableViewDelegateTransporter.swift */,
 				2DE9AA9D920D18D17CA9C37A85C52D66 /* Pod */,
 				D98183B63C854D0C7EB376E47F008E82 /* Support Files */,
 			);
@@ -282,7 +272,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF13556467A3AA167C23FFA941B712F6 /* DelegateTransporter.h in Headers */,
 				4F69534F8D673DB46E0B387F07B0A671 /* ReverseExtension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,10 +393,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				299ACF5AC5F477637D95205E548C25EE /* DelegateTransporter.m in Sources */,
 				54BF89D1BE6BC44CAD808E2588BAA69E /* ReverseExtension-dummy.m in Sources */,
 				4354B2D48C7C0D87F4CF520518E5B8C9 /* ReverseExtension.swift in Sources */,
-				59FF84DA3C57E5B0EEF598CA601086DA /* UITableViewDelegateTransporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,8 +746,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
