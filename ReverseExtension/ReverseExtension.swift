@@ -420,7 +420,15 @@ extension UITableView.ReverseExtension: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return dataSource?.tableView?(tableView, titleForHeaderInSection: reversedSection(with: section))
     }
-    
+
+    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return delegate?.tableView?(tableView, viewForHeaderInSection: reversedSection(with: section))
+    }
+
+    public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return delegate?.tableView?(tableView, viewForFooterInSection: reversedSection(with: section))
+    }
+
     // Editing
     
     // Individual rows can opt out of having the -editing property set for them. If not implemented, all rows are assumed to be editable.
