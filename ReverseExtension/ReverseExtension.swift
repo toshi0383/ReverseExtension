@@ -148,7 +148,7 @@ extension UITableView {
             }
 
             if contentInsetObserver == nil {
-                tableView.observe(\.safeAreaInsets) { [weak self] _, _ in
+                contentInsetObserver = tableView.observe(\.safeAreaInsets) { [weak self] _, _ in
                     DispatchQueue.main.async { [weak self] in
                         self?.configureTableViewInsets()
                     }
