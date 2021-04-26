@@ -69,4 +69,8 @@ extension ViewController: UITableViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print("scrollView.contentOffset.y =", scrollView.contentOffset.y)
     }
+
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        .none
+    }
 }
