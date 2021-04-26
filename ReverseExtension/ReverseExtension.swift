@@ -400,6 +400,18 @@ extension UITableView.ReverseExtension: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         delegate?.tableView?(tableView, heightForFooterInSection: reversedSection(with: section)) ?? .leastNonzeroMagnitude
     }
+
+    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        delegate?.tableView?(tableView, editingStyleForRowAt: indexPath) ?? .delete
+    }
+
+    public func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        delegate?.tableView?(tableView, trailingSwipeActionsConfigurationForRowAt: indexPath)
+    }
+
+    public func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        delegate?.tableView?(tableView, leadingSwipeActionsConfigurationForRowAt: indexPath)
+    }
 }
 
 extension UITableView.ReverseExtension: UITableViewDataSource {
