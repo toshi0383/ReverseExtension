@@ -4,7 +4,7 @@ let package = Package(
     name: "ReverseExtension",
     targets: [
         .target(
-            name: "ReversExtension", 
+            name: "ReverseExtension", 
             path: "ReverseExtension"
         )
     ],
