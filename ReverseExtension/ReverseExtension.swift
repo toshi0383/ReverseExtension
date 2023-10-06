@@ -175,11 +175,13 @@ extension UITableView {
             base.contentInset.top = contentInset.bottom
             self.lastContentInset = base.contentInset
 
+            #if os(iOS)
             let scrollIndicatorInsets = base.scrollIndicatorInsets
             base.scrollIndicatorInsets.bottom = scrollIndicatorInsets.top
             base.scrollIndicatorInsets.top = scrollIndicatorInsets.bottom
             base.scrollIndicatorInsets.right = base.bounds.size.width - 8
             self.lastScrollIndicatorInsets = base.scrollIndicatorInsets
+            #endif
         }
         
         fileprivate func configureCell(_ cell: UITableViewCell?) {
